@@ -421,6 +421,25 @@
 		ssBackToTop();
 
 	})();
- 
+ 	$("#Submit").click(function(){
+ 			$.ajax({
+			    url: "https://formspree.io/vivekgari@gmail.com", 
+			    accepts: {
+			        
+			        text: "text/plain",
+			        html: "text/html",
+			        xml: "application/xml, text/xml",
+			        json: "application/json, text/javascript"
+			    },			    
+			    method: "POST",
+			    data: {
+			    	message: $("#contactMessage").val(), 
+			    	name: $("#contactName").val(), 
+			    	_replyto: $("#contactEmail").val(), 
+			    	_subject: $("#contactSubject").val() 
+			    },
+			    dataType: "json"
+			});
+ 	});
 
 })(jQuery);
