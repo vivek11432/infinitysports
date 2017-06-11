@@ -441,5 +441,43 @@
 			    dataType: "json"
 			});
  	});
-
+	
+	var imgSrcs =[
+		"./images/bg-images/1.jpg",
+		"./images/bg-images/2.jpg",
+		"./images/bg-images/3.jpg",
+		"./images/bg-images/4.jpg",
+		"./images/bg-images/5.jpg",
+		"./images/bg-images/6.jpg",
+		"./images/bg-images/7.jpg",
+		"./images/bg-images/8.jpg",
+		"./images/bg-images/9.jpg",
+		"./images/bg-images/10.jpg",
+		"./images/bg-images/11.jpg",
+		"./images/bg-images/12.jpg",
+		"./images/bg-images/13.jpg",
+		"./images/bg-images/14.jpg",
+		"./images/bg-images/15.jpg",
+		"./images/bg-images/16.jpg",
+		"./images/bg-images/17.jpg",
+		"./images/bg-images/18.jpg",
+		"./images/bg-images/19.jpg",
+	];
+	
+	$('#cover').delay(1000).fadeIn(1000, animateBackground());
+	
+	function animateBackground() {
+		
+		window.setTimeout(function(){
+			
+			var url = imgSrcs[imgSrcs.push(imgSrcs.shift()) - 1];
+			
+			$('#home').delay(10000).fadeOut(1000, function(){
+				
+				$("#home").css("background-image", "url(" + url + " )")
+				
+			}).fadeIn(1000, animateBackground())
+			
+		});
+	}
 })(jQuery);
