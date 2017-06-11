@@ -453,8 +453,6 @@
 		"./images/bg-images/8.jpg",
 		"./images/bg-images/9.jpg",
 		"./images/bg-images/10.jpg",
-		"./images/bg-images/11.jpg",
-		"./images/bg-images/12.jpg",
 		"./images/bg-images/13.jpg",
 		"./images/bg-images/14.jpg",
 		"./images/bg-images/15.jpg",

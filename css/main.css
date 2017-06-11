@@ -1802,7 +1802,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   content: "";
   width: 3px;
   height: 9.6rem;
-  background-color: rgba(149, 149, 149, 0.7);
+  background-color: #08627e;
   margin: 0 auto 2.4rem;
 }
 #about .lead {
@@ -3019,3 +3019,6 @@ footer h4.h05::after {
       75%  {background: gray;}
       100% {background: aqua;}
     }
+.white-color{
+  color: white;
+}
