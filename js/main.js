@@ -472,7 +472,7 @@
 			
 			var url = imgSrcs[imgSrcs.push(imgSrcs.shift()) - 1];
 			
-			$('#home').delay(10000).fadeOut(1000, function(){
+			$('#home').delay(20000).fadeOut(1000, function(){
 				
 				$("#home").css("background-image", "url(" + url + " )")
 				
